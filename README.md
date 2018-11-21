@@ -1,5 +1,26 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+-----
+
+# YouTube Search Videos
+
+## 개요
+- react app을 이용한 YouTube 동영상 검색 서비스
+
+## 실행 방법
+1. 클론을 한 뒤 해당 directory로 이동
+2. `npm run clean` (생략 가능. 3, 4번 했을 때 문제 생기면 여기부터 다시 시도)
+3. `npm install`
+4. `npm start`
+
+## 구현 기능
+- youtube-data-api를 이용한 동영상 검색
+- 무한 스크롤
+- 맨 위로 버튼
+- 가로 길이 760px 기준으로 Mobile, Desktop 버전의 CSS 각각 생성
+
+-----
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -134,9 +134,6 @@
     box-shadow: 0 0 0 3px #e5e5e5;
     z-index: 90;
   }
-  #back-to-top-link {
-    z-index: 100;
-  }
 }
 
 /* desktop ( >= 760) */
@@ -274,9 +271,6 @@
      bottom: 2vw;
      box-shadow: 0 0 0 3px #e5e5e5;
      z-index: 90;
-   }
-   #back-to-top-link {
      cursor: pointer;
-     z-index: 100;
    }
 }
