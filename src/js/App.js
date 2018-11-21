@@ -80,31 +80,24 @@ class App extends Component {
         const { videos } = this.state;
 
         return (
-            <html lang="ko">
-            <head>
-                <title>Search YouTube Videos Service</title>
-            </head>
-            <body>
-                <div id="container">
-                <header>
-                    <h1>Search <span>Videos</span></h1>
-                    <p>Search all YouTube Videos</p>
-                </header>
-                <section>
-                    <form id="search-form" method="get" onSubmit={ this.search }>
-                        <div className="fieldcontainer">
-                            <input type="text" id="query" name="query" className="search-field" placeholder="Search YouTube" ref={ (query) => this.query = query }/>
-                            <input type="submit" name="search-btn" className="search-btn" value="      "/>
-                        </div>
-                    </form>
-                    <ul id='results' className='item-list'>
-                        <List videos={ videos }/>
-                    </ul>
-                </section>
-                </div>
-                <div id="back-to-top" onClick={ this.backToTop }></div>
-            </body>
-            </html>
+        <div id="container">
+            <header>
+                <h1>Search <span>Videos</span></h1>
+                <p>Search all YouTube Videos</p>
+            </header>
+            <section>
+                <form id="search-form" method="get" onSubmit={ this.search }>
+                    <div className="fieldcontainer">
+                        <input type="text" id="query" name="query" className="search-field" placeholder="Search YouTube" ref={ (query) => this.query = query }/>
+                        <input type="submit" name="search-btn" className="search-btn" value="      "/>
+                    </div>
+                </form>
+                <ul id='results' className='item-list'>
+                    <List videos={ videos }/>
+                </ul>
+            </section>
+            <div id="back-to-top" onClick={ this.backToTop }></div>
+        </div>
         );
     }
 }
